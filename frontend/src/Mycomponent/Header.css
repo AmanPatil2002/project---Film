@@ -1,0 +1,54 @@
+.custom-navbar {
+  background: linear-gradient(90deg, #141e30, #243b55);
+  padding: 12px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.brand-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff !important;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.brand-logo:hover {
+  color: #ffc107 !important;
+  transform: scale(1.05);
+}
+
+.nav-item-custom {
+  color: #fff !important;
+  margin-left: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-item-custom:hover {
+  color: #ffc107 !important;
+}
+
+.nav-item-custom::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ffc107;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.nav-item-custom:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
